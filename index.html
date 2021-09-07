@@ -101,17 +101,7 @@
             </p>
             <br/>
         </div>
-        <!--div class="wow fadeInUp">
-            <p class="section1-title section1-sub">
-                사랑으로 물들어가는 계절,<br/>
-                연인에서 부부라는 이름으로<br/>
-                평생을 함께 하고자 합니다.<br/>
-                귀한 걸음 하시어<br/>
-                두 사람의 언약을 지켜봐 주시면<br/>
-                더 없는 기쁨으로 간직하겠습니다.
-            </p>
-            <br/>
-        </div> -->
+
         <div class="wow fadeInUp">
             <div class="section1-title section1-sub2">
                 천수영 · 송영자<span class="small">의&nbsp아들&nbsp&nbsp</span>천성준<br/>
@@ -393,8 +383,8 @@
 
             <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=76a29716f2f32772bb80d888e44158a7"></script>
             <script>
-                var mapContainer = document.getElementById('map'), // 지도를 표시할 div
-                    mapOption = {
+                var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+                var options = { //지도를 생성할 때 필요한 기본 옵션
                         center: new kakao.maps.LatLng(37.45780466764263, 126.9539757931851), // 지도의 중심좌표
                         level: 3 // 지도의 확대 레벨
                     };
