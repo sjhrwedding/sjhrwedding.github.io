@@ -59,8 +59,8 @@
             let date = new Date(2021, 11, 06);
             let currentDate = new Date();
 
-            let result = date - currentDate;
-            let misec = 24 * 60 * 60 * 1000;
+            let result = (date - currentDate)/1000;
+            let misec = 24 * 60 * 60;
 
             result = (result <= 0)? 0 : (parseInt(result / misec) + 1);
 
