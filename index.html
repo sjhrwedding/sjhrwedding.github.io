@@ -70,6 +70,12 @@
             $(document).bind("contextmenu", function (e) {
                 return false;
             });
+            $(document).bind('keydown',function(e){
+                if ( e.keyCode == 123) {
+                    e.preventDefault();
+                    e.returnValue = false;
+                }
+            });
         });
         
     </script>
