@@ -66,11 +66,12 @@
             result = (result <= 0)? 0 : (parseInt(result / misec) + 1);
 
             $("#d-day").html(result);
+            
+            $(document).bind("contextmenu", function (e) {
+                return false;
+            });
         });
         
-        $(document).bind("contextmenu", function (e) {
-            return false;
-        });
     </script>
 </head>
 <body class="text-center">
